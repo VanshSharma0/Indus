@@ -1,0 +1,80 @@
+/* Base Styles */
+.ivmCarousel__container {
+  --curve-height: 250px;
+  --v-offset: 100px;
+  overflow: hidden;
+  padding-top: 20px;
+  position: relative;
+}
+
+.ivmCarousel__container::before,
+.ivmCarousel__container::after {
+  content: "";
+  background: white;
+  border-radius: 45%;
+  display: block;
+  height: var(--curve-height);
+  left: calc(-1 * var(--v-offset));
+  position: absolute;
+  right: calc(-1 * var(--v-offset));
+  top: calc(-0.7 * var(--curve-height));
+  width: calc(100vw + 2 * var(--v-offset));
+  z-index: 2;
+}
+
+.ivmCarousel__subContainer {
+  -o-transition-timing-function: linear !important;
+  -webkit-transition-timing-function: linear !important;
+  align-items: center !important;
+  display: flex;
+  margin-bottom: 40px;
+  transition-timing-function: linear !important;
+}
+
+.ivmCarousel__slide {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-left: 14px;
+  margin-right: 14px;
+  width: 262px;
+}
+
+.ivmCarousel__slide p {
+  font-family: "PrimaryFont";
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.ivmCarousel__image {
+  width: 100%;
+  height: auto;
+}
+
+/* Mobile View */
+@media (max-width: 600px) {
+  .ivmCarousel__container {
+    --curve-height: 150px;
+    --v-offset: 100px;
+    margin-top: -10px;
+  }
+
+  .ivmCarousel__slide {
+    gap: 8px;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 108px;
+  }
+
+  .ivmCarousel__slide p {
+    font-size: 12px;
+    font-style: normal;
+  }
+
+  .ivmCarousel__image {
+    height: 120px;
+    align-self: stretch;
+  }
+}

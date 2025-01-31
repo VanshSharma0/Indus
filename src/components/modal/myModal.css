@@ -1,0 +1,126 @@
+.modal-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 24px;
+  border-radius: 8px;
+  text-align: left;
+  margin-bottom: 20px;
+  width: 34%;
+  height: 320px;
+}
+.modal-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-button.MuiButton-root {
+  background-color: #5c6723;
+  border: none;
+  color: white;
+  text-align: center;
+  border-radius: 8px;
+  padding: 8px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 4px 2px;
+  cursor: pointer;
+  margin-top: 20px;
+  &:hover {
+    background-color: #5c6723;
+  }
+}
+
+.close-button.MuiIconButton-root {
+  cursor: pointer;
+  font-size: 12px;
+  position: absolute;
+  right: 10px;
+  text-align: center;
+  text-decoration: none;
+  top: 10px;
+}
+
+.input-error-text.MuiFormHelperText-root {
+  color: red;
+  font-size: 12px;
+}
+
+.modal-title.MuiTypography-root {
+  font-size: 20px;
+  font-family: "Outfit";
+  color: #5c6723;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+
+.input-label.MuiFormLabel-root {
+  font-size: 16px;
+  font-family: "Outfit";
+  color: #5c6723;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  line-height: 1.5;
+}
+
+.modal-input.MuiInput-root {
+  width: 100%;
+  padding: 8px;
+  margin: 0;
+  margin-top: 8px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  border-radius: 8px;
+  &:focus {
+    outline: none;
+  }
+}
+
+.input-error.MuiInput-root {
+  font-size: 12px;
+  border: 1px solid red;
+  margin-top: 0px;
+}
+
+.thank-you-text.MuiTypography-root {
+  font-size: 18px;
+  color: #5c6723;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.lottie-animation {
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .modal-container {
+    width: 80%;
+    height: 370px;
+  }
+
+  .modal-button.MuiButton-root {
+    font-size: 12px;
+  }
+
+  .modal-title.MuiTypography-root {
+    font-size: 20px;
+  }
+
+  .input-label.MuiFormLabel-root {
+    font-size: 14px;
+  }
+
+  .modal-input {
+    padding: 8px;
+    margin: 6px 0;
+  }
+}
