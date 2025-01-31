@@ -10,7 +10,7 @@ import PropertyRates from "./PropertyRates";
 import RouteMap from "./RouteMap";
 import Ratings from "./Ratings";
 import GalleryVideoHome from "./GalleryVideoHome";
-import Testimonials from "./Testi monials";
+import Testimonials from "./Testimonials";
 
 function Home() {
   return (
