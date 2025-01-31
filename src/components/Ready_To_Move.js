@@ -16,12 +16,14 @@ import { useCallback } from "react";
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
 
-
 const Card = ({ href, image, alt, title, plot, price }) => (
   <div className="w-fit rounded-xl border-2 shadow-lg m-auto bg-[#FAF9F6] transition-transform duration-500 hover:shadow-2xl hover:scale-105">
-    <a href={href}>
-      <img className="rounded-t-xl w-screen md:w-96 h-64 object-cover" src={image} alt={alt} />
-    </a>
+    <Link to={href} className="block">
+      <img className="rounded-t-xl w-screen md:w-96 h-64 object-cover" 
+           src={image} 
+           alt={alt} 
+           loading="lazy" />
+    </Link>
     <div className="p-4">
       <div className="flex flex-col justify-center items-center">
         <h2 className="text-2xl text-[#74613C] font-merriweather font-bold">{title}</h2>
@@ -34,7 +36,6 @@ const Card = ({ href, image, alt, title, plot, price }) => (
     </div>
   </div>
 );
-
 
 function Ready_To_Move() {
   const particlesInit = useCallback(async engine => {
