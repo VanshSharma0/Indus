@@ -120,7 +120,7 @@ function MainRoutes() {
           path="/Studio_1bhk_Apart_layout"
           element={<Studio1bhkApartLayout />}
         />
-        {/* <Route exact path="/Plot_26" element={<Plot26Layout />} />
+        <Route exact path="/Plot_26" element={<Plot26Layout />} />
         <Route exact path="/Plot_5_6" element={<Plot56Layout />} />
         <Route exact path="/Plot_36" element={<Plot36Layout />} />
         <Route exact path="/Plot_09" element={<Plot_09_layout />} />
@@ -128,7 +128,7 @@ function MainRoutes() {
         <Route exact path="/Plot_27" element={<Plot27Layout />} />
         <Route exact path="/Wooden_2bhk" element={<Plot2bhkWooden />} />
         <Route exact path="/Wooden_3bhk" element={<Plot3bhkWooden />} />
-        <Route exact path="/PropertyRates" element={<PropertyRates />} /> */}
+        <Route exact path="/PropertyRates" element={<PropertyRates />} />
 
         <Route exact path="/PriceRange1" element={<PriceRange1 />} />
         <Route exact path="/PriceRange2" element={<PriceRange2 />} />
