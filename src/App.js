@@ -27,7 +27,7 @@ import Studio1bhkApartLayout from "./components/r2m_layout/Studio_1bhk_Apart_lay
 import Plot26Layout from "./components/r2m_layout/Plot_26_layout";
 import Plot56Layout from "./components/r2m_layout/Plot_5_6_layout";
 import Plot36Layout from "./components/r2m_layout/Plot_36_layout";
-import Plot09Layout from "./components/r2m_layout/Plot_09_layout";
+import Plot_09_layout from "./components/r2m_layout/Plot_09_layout";
 import Plot01Layout from "./components/r2m_layout/Plot_01_layout";
 import Plot27Layout from "./components/r2m_layout/Plot_27_layout";
 import Plot2bhkWooden from "./components/r2m_layout/Plot_2bhk_Wooden";
@@ -123,7 +123,7 @@ function MainRoutes() {
         <Route exact path="/Plot_26" element={<Plot26Layout />} />
         <Route exact path="/Plot_5_6" element={<Plot56Layout />} />
         <Route exact path="/Plot_36" element={<Plot36Layout />} />
-        <Route exact path="/Plot_09" element={<Plot09Layout />} />
+        <Route exact path="/Plot_09" element={<Plot_09_layout />} />
         <Route exact path="/Plot_01" element={<Plot01Layout />} />
         <Route exact path="/Plot_27" element={<Plot27Layout />} />
         <Route exact path="/Wooden_2bhk" element={<Plot2bhkWooden />} />
